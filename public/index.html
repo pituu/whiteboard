@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>whiteboard</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="menu">
+        <button class="menu_button"  onclick="active_rectangle('black')" id="rectangle">
+            <img src="icons/rectangle.svg" width="80%" height="80%">
+        </button>
+        <button class="menu_button" onclick="active_line('black')" id="line">
+            <img src="icons/line.svg" width="80%" height="80%">
+        </button>
+        <button class="menu_button" id="pencil" onclick="change('black'),active_pencil()">
+            <img src="icons/pencil.svg" width="80%" height="80%">
+        </button>
+        <button class="menu_button" id="rubber" onclick="change('white'),active_rubber()">
+            <img src="icons/rubber.svg" width="80%" height="80%">
+        </button>
+    </div>
+    <canvas id="canvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.2/socket.io.js" ></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
