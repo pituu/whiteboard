@@ -1,4 +1,4 @@
-var io = io.connect("http://115.187.46.39:8080/");
+var io = io.connect("https://pitu-whiteboard580.onrender.com/");
 let canvas = document.getElementById("canvas");
 canvas.height = 0.97 * window.innerHeight;
 canvas.width = window.innerWidth;
